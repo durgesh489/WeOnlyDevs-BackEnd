@@ -16,7 +16,7 @@ const developerSchema = new mongoose.Schema({
       }
     },
   },
-  
+
   title: {
     type: String,
     required: true,
@@ -31,9 +31,8 @@ const developerSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-   
   },
-  
+  approve: { type: Number, default: 0 }
 });
 
 const Student = new mongoose.model("Developer", developerSchema);

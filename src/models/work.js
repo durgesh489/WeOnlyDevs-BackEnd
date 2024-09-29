@@ -9,6 +9,7 @@ const workSchema = new mongoose.Schema({
   techStack: { type: String, required: true },
   resources: { type: String }, // File path or URL to uploaded resource
   additionalNotes: { type: String },
+  approve: { type: Number, default: 0 }
 }, { timestamps: true });
 
 const Work = mongoose.model('Work', workSchema);
